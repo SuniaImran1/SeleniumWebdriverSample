@@ -3,7 +3,7 @@ Feature: gmail
   @gmail
   Scenario: login and logout
     Given I login to the gmail"http://gmail.com"
-    When I enter the email address as "sunia.imran@gmail.com" and "Magento123"
+  When I enter the email address as "***@gmail.com" and "**"
     And i click on inbox
     And I logout
 
