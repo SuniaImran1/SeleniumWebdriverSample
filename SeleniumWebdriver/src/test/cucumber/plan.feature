@@ -9,7 +9,7 @@ Feature: gmail
 
   Scenario: login to gmail and check the starred  emails
     Given I login to the gmail"http://gmail.com"
-    When I enter the email address as "sunia.imran@gmail.com" and "Magento123"
+    When I enter the email address as "***@gmail.com" and "***"
     And i click on inbox
     And i check the total numbers of email in the inbox
     And I click on star
