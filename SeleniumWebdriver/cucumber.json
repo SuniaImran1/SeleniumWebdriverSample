@@ -7,26 +7,27 @@
     "line": 1,
     "elements": [
       {
-        "id": "gmail;login-and-logout",
+        "id": "gmail;login-to-gmail-and-check-the-starred--emails",
         "tags": [
           {
             "name": "@gmail",
-            "line": 3
+            "line": 9
           }
         ],
         "description": "",
-        "name": "login and logout",
+        "name": "login to gmail and check the starred  emails",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 10,
         "steps": [
           {
             "result": {
-              "duration": 5447475426,
-              "status": "passed"
+              "duration": 18910781215,
+              "status": "failed",
+              "error_message": "org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.\nCommand duration or timeout: 324 milliseconds\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027desktop\u0027, ip: \u0027127.0.0.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00272.6.32-573.7.1.el6.x86_64\u0027, java.version: \u00271.7.0_51\u0027\nSession ID: 25b527ea-cfc8-4e27-83b2-b43c9e293bd2\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{platform\u003dLINUX, acceptSslCerts\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, databaseEnabled\u003dtrue, browserName\u003dfirefox, handlesAlerts\u003dtrue, nativeEvents\u003dfalse, webStorageEnabled\u003dtrue, rotatable\u003dfalse, locationContextEnabled\u003dtrue, applicationCacheEnabled\u003dtrue, takesScreenshot\u003dtrue, version\u003d38.7.0}]\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:526)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)\n\tat pageobjects.LoginPage.NavigateToUrl(LoginPage.java:54)\n\tat Steps.Stepdefinitions.i_login_to_the_gmail(Stepdefinitions.java:24)\n\tat ✽.Given I login to the gmail\"http://gmail.com\"(src/test/cucumber/plan.feature:11)\nCaused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027desktop\u0027, ip: \u0027127.0.0.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00272.6.32-573.7.1.el6.x86_64\u0027, java.version: \u00271.7.0_51\u0027\nDriver info: driver.version: unknown\n\tat \u003canonymous class\u003e.nsCommandProcessor.prototype.execute(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12715)\n\tat \u003canonymous class\u003e.Dispatcher.executeAs/\u003c(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9558)\n\tat \u003canonymous class\u003e.Resource.prototype.handle(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9705)\n\tat \u003canonymous class\u003e.Dispatcher.prototype.dispatch(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9652)\n\tat \u003canonymous class\u003e.WebDriverServer/\u003c.handle(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12517)\n\tat \u003canonymous class\u003e.createHandlerFunc/\u003c(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)\n\tat \u003canonymous class\u003e.ServerHandler.prototype.handleResponse(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)\n\tat \u003canonymous class\u003e.Connection.prototype.process(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)\n\tat \u003canonymous class\u003e.RequestReader.prototype._handleResponse(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)\n\tat \u003canonymous class\u003e.RequestReader.prototype._processBody(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)\n\tat \u003canonymous class\u003e.RequestReader.prototype.onInputStreamReady(file:///tmp/anonymous7935996032725255100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)\n"
             },
             "name": "I login to the gmail\"http://gmail.com\"",
             "keyword": "Given ",
-            "line": 5,
+            "line": 11,
             "match": {
               "arguments": [
                 {
@@ -39,12 +40,11 @@
           },
           {
             "result": {
-              "duration": 470818834051,
-              "status": "passed"
+              "status": "skipped"
             },
             "name": "I enter the email address as \"sunia.imran@gmail.com\" and \"Magento123\"",
             "keyword": "When ",
-            "line": 6,
+            "line": 12,
             "match": {
               "arguments": [
                 {
@@ -61,27 +61,165 @@
           },
           {
             "result": {
-              "duration": 35231,
-              "status": "passed"
+              "status": "skipped"
             },
             "name": "i click on inbox",
             "keyword": "And ",
-            "line": 7,
+            "line": 13,
             "match": {
               "location": "Stepdefinitions.i_click_on_inbox()"
             }
           },
           {
             "result": {
-              "duration": 33492,
-              "status": "passed"
+              "status": "skipped"
             },
-            "name": "I logout",
+            "name": "i check the total numbers of email in the inbox",
             "keyword": "And ",
-            "line": 8,
+            "line": 14,
             "match": {
-              "location": "Stepdefinitions.i_logout()"
+              "location": "Stepdefinitions.i_check_the_total_numbers_of_email_in_the_inbox()"
             }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "i click on starred emails",
+            "keyword": "And ",
+            "line": 15,
+            "match": {
+              "location": "Stepdefinitions.i_click_on_starred_emails()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I click on star",
+            "keyword": "And ",
+            "line": 16,
+            "match": {
+              "location": "Stepdefinitions.i_click_on_star()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I click on stared emails",
+            "keyword": "And ",
+            "line": 18,
+            "match": {
+              "location": "Stepdefinitions.i_click_on_stared_emails()"
+            },
+            "comments": [
+              {
+                "value": "#And I should have one email in stared",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I should have the message present as \"No starred messages\"",
+            "keyword": "And ",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "val": "No starred messages",
+                  "offset": 38
+                }
+              ],
+              "location": "Stepdefinitions.i_should_have_the_message_present_as(String)"
+            },
+            "comments": [
+              {
+                "value": "# When i click on star",
+                "line": 19
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "src/test/cucumber/plan.feature"
+  }
+]esult": {
+              "status": "skipped"
+            },
+            "name": "i check the total numbers of email in the inbox",
+            "keyword": "And ",
+            "line": 14,
+            "match": {
+              "location": "Stepdefinitions.i_check_the_total_numbers_of_email_in_the_inbox()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "i click on starred emails",
+            "keyword": "And ",
+            "line": 15,
+            "match": {
+              "location": "Stepdefinitions.i_click_on_starred_emails()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I click on star",
+            "keyword": "And ",
+            "line": 16,
+            "match": {
+              "location": "Stepdefinitions.i_click_on_star()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I click on stared emails",
+            "keyword": "And ",
+            "line": 18,
+            "match": {
+              "location": "Stepdefinitions.i_click_on_stared_emails()"
+            },
+            "comments": [
+              {
+                "value": "#And I should have one email in stared",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I should have the message present as \"No starred messages\"",
+            "keyword": "And ",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "val": "No starred messages",
+                  "offset": 38
+                }
+              ],
+              "location": "Stepdefinitions.i_should_have_the_message_present_as(String)"
+            },
+            "comments": [
+              {
+                "value": "# When i click on star",
+                "line": 19
+              }
+            ]
           }
         ],
         "type": "scenario"
